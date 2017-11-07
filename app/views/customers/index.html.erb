@@ -1,2 +1,8 @@
-<h1>Customers#index</h1>
-<p>Find me in app/views/customers/index.html.erb</p>
+<h1>Customer</h1>
+
+<%= render partial: 'customer', 
+           collection: @customers %>
+
+
+<%= link_to 'Customer in Order', alphabetized_customers_path %>
+<%= link_to 'Customer with no Email', missing_email_customers_path %>

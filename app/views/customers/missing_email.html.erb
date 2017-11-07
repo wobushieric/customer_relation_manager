@@ -1,2 +1,6 @@
-<h1>Customers#missing_email</h1>
-<p>Find me in app/views/customers/missing_email.html.erb</p>
+<h1>Missing Email Customers</h1>
+
+<%= render partial: 'customer', 
+           collection: @no_email_customers %>
+
+<%= link_to 'Back', customers_path %>

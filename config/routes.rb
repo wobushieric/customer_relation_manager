@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  get 'customers/index'
 
-  get 'customers/alphabetized'
-
-  get 'customers/missing_email'
+  resources :customers, only: [:index]  do
+    collection do
+      get 'alphabetized'
+      get 'missing_email'
+    end
+  end
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

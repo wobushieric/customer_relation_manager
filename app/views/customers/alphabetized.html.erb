@@ -1,2 +1,7 @@
-<h1>Customers#alphabetized</h1>
-<p>Find me in app/views/customers/alphabetized.html.erb</p>
+<h1>Ordered Customers</h1>
+
+<%= render partial: 'customer', 
+           collection: @ordered_customers %>
+
+
+<%= link_to 'Back', customers_path %>
