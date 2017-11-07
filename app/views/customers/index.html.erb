@@ -1,7 +1,9 @@
-<h1>Customer</h1>
+<h1>All Customer</h1>
 
-<%= render partial: 'customer', 
-           collection: @customers %>
+<div>
+	<%= render partial: 'customer', 
+	           collection: @customers %>
+</div>
 
 
 <%= link_to 'Customer in Order', alphabetized_customers_path %>
