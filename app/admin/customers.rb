@@ -12,4 +12,6 @@ ActiveAdmin.register Customer do
 #   permitted
 # end
 
+permit_params :full_name, :phone_number, :email_address, :image, :notes
+
 end
