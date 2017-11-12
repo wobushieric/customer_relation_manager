@@ -1,7 +1,8 @@
 <h1>Ordered Customers</h1>
 
-<%= render partial: 'customer', 
-           collection: @ordered_customers %>
-
+<div id="customers">
+	<%= render partial: 'customer', 
+	           collection: @ordered_customers %>
+</div>
 
 <%= link_to 'Back', customers_path %>
