@@ -3,7 +3,7 @@
 	<p><%= image_tag(customer.image) %></p>
 	<p><strong>Province: </strong>
 		<% if customer.province.nil? %>
-			Unknown
+			None
 		<% else %>
 			<%= customer.province.name %>
 		<% end %>
